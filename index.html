@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>آزمون‌های تعاملی</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,11 +14,17 @@
   <div class="container">
     <div class="card">
       <h2>Word</h2>
-      <a href="word/index.html" target="_blank">شروع آزمون</a>
+      <button type="button" class="btn btn-primary radius-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="showModal(0)">
+          انتخاب آزمون
+      </button>
+      <!-- <a href="word/index.html" target="_blank">شروع آزمون</a> -->
     </div>
 
     <div class="card">
       <h2>Excel</h2>
+      <button type="button" class="btn btn-primary radius-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="showModal(1)">
+          انتخاب آزمون
+      </button>
       <a href="Excel/index.html" target="_blank">شروع آزمون</a>
     </div>
 
@@ -93,6 +101,26 @@
       <a href="Android/index.html" target="_blank">شروع آزمون</a>
     </div>
   </div>
-
+<div class="modal" tabindex="-1" id="exampleModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex">
+          <ul id="exams">
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

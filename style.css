@@ -1,5 +1,10 @@
-    body {
-      font-family: "Vazir", sans-serif;
+   @font-face {
+    font-family: Yekan;
+    src: url("./Fonts/YekanBakhRegular.eot") format(".eot"),url("./Fonts/YekanBakhRegular.woff");
+   }
+
+   body {
+      font-family: Yekan, sans-serif;
       background: linear-gradient(120deg, #eef2f3, #8e9eab);
       margin: 0;
       padding: 0;
@@ -10,6 +15,10 @@
       color: #333;
       margin-top: 50px;
       font-size: 2rem;
+    }
+    h2 {
+      color: #333;
+      font-size: 18px;
     }
     .container {
       display: flex;
@@ -23,28 +32,43 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       margin: 20px;
       padding: 30px;
-      width: 250px;
+      width: 380px;
       transition: transform 0.3s;
     }
     .card:hover {
       transform: scale(1.05);
     }
-    .link-exam,a {
+    .link-exam,#btn {
       display: inline-block;
       margin-top: 10px;
       padding: 10px 20px;
-      background: #0078d7;
-      color: white;
+      /* background: #0078d7; */
+      color: #333 ;
       text-decoration: none;
-      border-radius: 8px;
+      /* border-radius: 8px; */
       transition: background 0.3s;
     }
-    a:hover {
+    #btn:hover {
       background: #005fa3;
     }
     .radius-btn{
         border-radius: 8px;
         margin-top: 10px;
         padding: 10px 20px;
+      }
+#exams{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
 
-    }
+}
+.item-exam{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+}
+.item-subject{
+  font-weight: bold;
+}
